@@ -1,37 +1,55 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/Sunny901105/876/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>"
+	<style type="text/css">
+		p{
+			color:red;
+			margin:5px;
+			cursor:pointer;
+		}
+		p:hover{
+			background:yellow;
+		}
+		.zenbo{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%
+			z-index: 10;
+			background: rgba(150,036,0,0.5);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+</head>
+<body>
+	<p>貓咪介紹</p>
+	<h1>萌軟奶貓</h1>
+	<div class="cat">
+		 <img src="https://cdn0.techbang.com/system/excerpt_images/60224/original/bf32199b457a11764b1a72b18259ff61.jpg?1533265554">
+	</div>
+                  <div class="fause">
+                  <img src="https://img.tukuppt.com/png_preview/00/05/87/Vw6Lm2JX7Z.jpg!/fw/780" width="50" height="50" >
+                  </div>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Sunny901105/876/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<script type="text/javascript"> 
+$('p').click(function(){
+$('.cat').slideToggle();
+                                                         $('.fause').slideToggle();
+                                                     
+});
+$('.fause').click(function(){
+$('.fause').slideToggle();
+                                                         $('.cat').slideToggle();
+});
+	</script>
+	
+</body>
+</html>
